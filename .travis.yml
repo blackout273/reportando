@@ -13,3 +13,7 @@ after_script:
 notifications:
   recipients:
     - danillo_meira10@hotmail.com
+deploy:
+  provider: heroku
+  api_key:
+    secure: 33a638c0-9a12-456a-a193-0ede18710581
