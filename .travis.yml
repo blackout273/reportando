@@ -1,0 +1,8 @@
+language: python
+python:
+  -"3.6"
+script: pytest test.py
+after_script:
+notifications:
+  recipients:
+    - danillo_meira10@hotmail.com
