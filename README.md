@@ -1,2 +1,1 @@
-# reportando
-um novo dia , uma nova oportunidade
+https://travis-ci.com/blackout273/reportando.svg?branch=master
