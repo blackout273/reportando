@@ -3,7 +3,7 @@ def app(environ, start_response):
     data = b'<!DOCTYPE html>'
     b'<html lang="pt-br">'
     b'<head>'
-    b'<title>Doc HTML na mão é mole kk</title>'
+    b'<title>Pipeline</title>'
     b'<style>'
     b'*{'
     b'margin:0;'
@@ -34,7 +34,7 @@ def app(environ, start_response):
     b'}'
     b'</script>'
     b'</html>'
-
+    str(data).encode('utf-8')
     status = '200 OK'
     headers = [('Content-type', 'text/html')]
     start_response(status, headers)
