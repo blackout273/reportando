@@ -1,6 +1,6 @@
+from contar import *
 
-from contar import mostra
 import pytest
 # -*- coding: utf-8 -*-
 def test_soma():
-    assert mostra()=="Olá mundo"
+    assert somar(2,4)==6
