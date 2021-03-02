@@ -1,6 +1,7 @@
 def app(environ, start_response):
     """Simplest possible application object"""
-    data = b"<h1>Fim da pipeline</h1><button id='btn' type='submit'>enviar</button><script>btn = document.getElementsById('btn') if(btn){alert('apertou botao')}</script>"
+    data = b"<!DOCTYPE html><html=lang'pt-br'><head><title>Doc HTML na mão é mole kk</title><style>*{margin:0;padding:0;}.container{position:absolute;margin-left:50%;transform:translateX(-50%);margin-top:15%;font-size:2vw;text-align:center;}</style></head><body><div class='container'><h1>Pipeline Completa</h1><h6>por favor insira o seu nome</h6><input type='text' id='nome' placeholder='Por favor, insira o seu nome'><button type='submit' onclick=(botao())>enviar</button> </div></body><script type='text/javascript'>var nome = document.getElementById('nome');function botao(){alert('olá   '+nome.value);}</script></html>"
+
     status = '200 OK'
     headers = [('Content-type', 'text/html')]
     start_response(status, headers)
