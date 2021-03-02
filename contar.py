@@ -34,7 +34,7 @@ def app(environ, start_response):
     b'}'
     b'</script>'
     b'</html>'
-    str(data).encode('utf-8')
+
     status = '200 OK'
     headers = [('Content-type', 'text/html')]
     start_response(status, headers)
