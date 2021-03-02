@@ -1,6 +1,6 @@
 def app(environ, start_response):
     """Simplest possible application object"""
-    dados=open("mix.html", mode="r")
+    dados=open("index.html", mode="r")
     bytes(dados)
     data=dados.read()
     status = '200 OK'
