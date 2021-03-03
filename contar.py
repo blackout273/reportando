@@ -70,10 +70,10 @@ def app(environ, start_response):
            b"</footer>    " \
            b"</html>    "
 
-    status = '200 OK'
+    status = '200 OK'.encode('utf-8')
     headers = [('Content-type', 'text/html')]
     start_response(status, headers)
-    return [data]
+    return [data],[status]
 
 
 def somar(x, y):
