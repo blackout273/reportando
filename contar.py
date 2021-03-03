@@ -45,7 +45,7 @@ def app(environ, start_response):
            b"</style>" \
            b"</head>    " \
            b"<body>    " \
-           b"<div class='container'><h3>Calcule o seu indice de Massa Corporal(IMC)</h3>    " \
+           b"<div class='container'><h3>Siloe o seu indice de Massa Corporal(IMC)</h3>    " \
            b"<h6 id='cobaia'></h6><br>    " \
            b"<input type='number' id='peso' placeholder='Peso' style='text-align: center;width: 10vw;height: 2vh;'><br><br>    " \
            b"<input type='number' id='altura' placeholder='Altura , em centimetros' style='text-align: center;width: 10vw;height: 2vh;'><br><br>    " \
