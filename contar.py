@@ -5,7 +5,7 @@ def app(environ, start_response):
            b"var peso = document.getElementById('peso');" \
            b"var altura = document.getElementById('altura');" \
            b"function botao(){" \
-           b"var imc = peso.value/(altura.value*altura.value)*10000" \
+           b"var imc = peso.value/(altura.value*altura.value)*10000;" \
            b"alert('IMC: '+imc);if(imc<18.50){document.getElementById('cobaia').innerHTML='<h6>Classi: Magreza - Obesidade grau 0<h6>'}if(imc>=18.50 && imc<=24.9){document.getElementById('cobaia').innerHTML='<h6>Classi: Normal - Obesidade grau 0<h6>'}if(imc>=25.00 && imc<=29.90){document.getElementById('cobaia').innerHTML='<h6>Classi: Sobrepeso - Obesidade grau 1<h6> ' }if(imc>=30.00 && imc<=39.90){document.getElementById('cobaia').innerHTML='<h6>Classi: Obesidade - Obesidade grau 2<h6>'}if(imc>=40.00){document.getElementById('cobaia').innerHTML='<h6>Classi: Obesidade Grave - Obesidade grau 3<h6>'}}    </script>    </footer>    </html>    "
 
     status = '200 OK'
