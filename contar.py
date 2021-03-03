@@ -2,7 +2,7 @@ import socket
 def app(environ, start_response):
     """Simplest possible application object"""
     host=socket.gethostbyname(socket.gethostname())
-    port=6500
+    port = 8080
     addr=(host,port)
     data = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     data.bind((addr))
