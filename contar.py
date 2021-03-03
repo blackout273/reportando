@@ -23,9 +23,9 @@ def app(environ, start_response):
            b"</html>"
 
 
-    status = '200 OK'
+
     headers = [('Content-type', 'text/html')]
-    start_response(status, headers)
+    start_response(environ, headers)
     return [data]
 
 def somar(x,y):
